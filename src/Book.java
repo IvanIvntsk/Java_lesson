@@ -2,6 +2,19 @@ import java.util.Arrays;
 
 public class Book {
     private String title;
+    private int pages;
+    private String[] authors;
+    private String genre;
+
+    public Book() {
+    }
+
+    public Book(String title, int pages, String[] authors, String genre) {
+        this.title = title;
+        this.pages = pages;
+        this.authors = authors;
+        this.genre = genre;
+    }
 
     public String getTitle() {
         return title;
@@ -35,27 +48,12 @@ public class Book {
         this.genre = genre;
     }
 
-    private int pages;
-    private String[] authors;
-    private String genre;
-
-    public Book() {
-
-    }
-
-    public Book(String title, int pages, String[] authors, String genre){
-        this.title = title;
-        this.pages = pages;
-        this.authors = authors;
-        this.genre = genre;
-    }
-
     @Override
     public String toString() {
         return "Book{" +
                 "title='" + title + '\'' +
                 ", pages=" + pages +
-                ", authors=" + Arrays.toString(authors) +
+                ", authors='" + Arrays.toString(authors) +
                 ", genre='" + genre + '\'' +
                 '}';
     }
