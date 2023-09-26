@@ -38,6 +38,6 @@ public class Book implements Printable {
 
     @Override
     public void print() {
-        System.out.println("Book:" + name + pages);
+        System.out.println("Book:" + this.name + this.pages);
     }
 }

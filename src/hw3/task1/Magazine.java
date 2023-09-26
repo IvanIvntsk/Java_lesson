@@ -38,6 +38,6 @@ public class Magazine implements Printable {
 
     @Override
     public void print() {
-        System.out.println("Magazine:" + name + pages);
+        System.out.println("Magazine:" + this.name + this.pages);
     }
 }
